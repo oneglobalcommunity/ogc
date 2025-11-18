@@ -460,6 +460,91 @@ p {
     box-shadow: var(--shadow-lg);
 }
 
+/* Q&A Section */
+.qa-section {
+    margin-top: 4rem;
+    padding-top: 4rem;
+    border-top: 2px solid var(--light-color);
+}
+
+.qa-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.qa-item {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.qa-item:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+}
+
+.qa-question {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.qa-answer {
+    margin-left: 1rem;
+}
+
+.korean-text {
+    color: var(--text-primary);
+    font-size: 1.05rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: var(--bg-secondary);
+    border-radius: 6px;
+    border-left: 4px solid var(--primary-color);
+    line-height: 1.8;
+}
+
+.english-text {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: var(--light-color);
+    border-radius: 6px;
+    border-left: 4px solid var(--info-color);
+    line-height: 1.8;
+}
+
+.qa-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding: 0.75rem 1.25rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    margin-top: 0.5rem;
+}
+
+.qa-link:hover {
+    background: var(--primary-color);
+    color: var(--white);
+    transform: translateX(5px);
+}
+
+.qa-link i {
+    font-size: 0.85rem;
+}
+
 /* Businesses Section */
 .businesses {
     padding: 80px 0;
@@ -796,6 +881,24 @@ p {
     .member-photo img {
         width: 100px;
         height: 100px;
+    }
+    
+    .qa-item {
+        padding: 1.5rem;
+    }
+    
+    .qa-question {
+        font-size: 1.1rem;
+    }
+    
+    .qa-answer {
+        margin-left: 0;
+    }
+    
+    .korean-text,
+    .english-text {
+        font-size: 0.95rem;
+        padding: 0.75rem;
     }
 }
 
